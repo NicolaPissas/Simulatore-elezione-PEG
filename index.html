@@ -2588,14 +2588,15 @@ function getCountryAcronym(countryName) {
   </div>
 </div>
 
+
 <script>
 
-// REGISTRAZIONE SERVICE WORKER
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/Simulatore-elezione-PEG/sw.js', {scope: '/Simulatore-elezione-PEG/'});
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js');
+  });
 }
 </script>
-
 
 </body>
 </html>
