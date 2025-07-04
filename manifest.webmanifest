@@ -1,0 +1,22 @@
+{
+  "name": "Simulatore Elezione Presidente Eurogruppo",
+  "short_name": "Sim PEG",
+  "description": "Simula il processo di elezione del Presidente dell'Eurogruppo con i ministri delle finanze dell'Eurozona",
+  "start_url": "/Simulatore-elezione-PEG/",
+  "scope": "/Simulatore-elezione-PEG/",
+  "display": "standalone",
+  "background_color": "#215C98",
+  "theme_color": "#215C98",
+  "icons": [
+    {
+      "src": "/Simulatore-elezione-PEG/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Simulatore-elezione-PEG/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
