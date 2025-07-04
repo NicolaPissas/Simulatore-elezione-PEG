@@ -1,15 +1,13 @@
-const CACHE_NAME = 'eurogruppo-pwa-v1';
-const ASSETS = [
-  './index.html',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png'
-  // Aggiungi qui eventuali altri asset (immagini base64 non servono)
+const CACHE_NAME = 'simulatore-eurogruppo-v1';
+const URLS_TO_CACHE = [
+  '/Simulatore-elezione-PEG/',
+  '/Simulatore-elezione-PEG/index.html',
+  // aggiungi qui altri asset se necessario
 ];
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(URLS_TO_CACHE))
   );
 });
 

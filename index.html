@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Simulatore Elezione Presidente Eurogruppo</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/Simulatore-elezione-PEG/manifest.webmanifest">
   <meta name="theme-color" content="#215C98">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
   <style>
@@ -2591,11 +2591,10 @@ function getCountryAcronym(countryName) {
 // REGISTRAZIONE SERVICE WORKER
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js');
-  });
+  navigator.serviceWorker.register('/Simulatore-elezione-PEG/sw.js', {scope: '/Simulatore-elezione-PEG/'});
 }
 </script>
+
 
 </body>
 </html>
